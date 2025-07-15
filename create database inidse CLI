@@ -32,7 +32,7 @@ MySQL [dev] > select * from students;
 |  5 | John Mathew  |   23 |
 +----+--------------+------+
 MySQL [dev] > exit
-
+exit
 
 
 
