@@ -1,0 +1,45 @@
+sudo dnf install mariadb105-server -y
+sudo systemctl start mariadb
+sudo systemctl enable mariadb
+To check mariadb install command is = mysql -V
+mysql -h <END-PINT> -u admin -p
+Enter Password:
+MySQL(none)> use dev;
+MySQL [dev]> create database dev;
+use dev;
+
+CREATE TABLE students (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100),
+    age INT
+);
+
+INSERT INTO students (name, age) VALUES
+('Rahul Verma', 20),
+('Priya Sharma', 22),
+('Amit Kumar', 19),
+('Sneha Reddy', 21),
+('John Mathew', 23);
+
+MySQL [dev] > select * from students;
++----+--------------+------+
+| id | name         | age  |
++----+--------------+------+
+|  1 | Rahul Verma  |   20 |
+|  2 | Priya Sharma |   22 |
+|  3 | Amit Kumar   |   19 |
+|  4 | Sneha Reddy  |   21 |
+|  5 | John Mathew  |   23 |
++----+--------------+------+
+MySQL [dev] > exit
+
+
+
+
+
+
+
+
+
+
+
